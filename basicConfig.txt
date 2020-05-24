@@ -44,5 +44,5 @@
     - $ git status
 
 8._ Regresar a la versión final
-    - $ git switch -c master
+    - $ git checkout master
 
