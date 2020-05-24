@@ -5,6 +5,12 @@
 <meta charset="UTF-8">
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=425587611565767&autoLogAppEvents=1"></script>
+<!--
+<div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+-->
 <script>
 
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
@@ -28,10 +34,10 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{425587611565767}',
+      appId      : '425587611565767',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : '{2.8}'           // Use this Graph API version for this call.
+      version    : '2.8'           // Use this Graph API version for this call.
     });
 
 
